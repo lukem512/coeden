@@ -109,6 +109,17 @@ section {
 
 footer {
     color: #ffffff;
+    font-size: medium;
+}
+
+footer a {
+    font-weight: normal;
+    color: #ffffff;
+    transition: all 0.1s ease-in;
+}
+
+footer a:hover {
+    color: rgba(255, 122, 0, 1);
 }
 
 #logo {
