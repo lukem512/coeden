@@ -1,0 +1,277 @@
+body {
+    font-family: "PT Sans Caption", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    color: #2c2c2c;
+    margin: 0;
+    padding: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: #2c2c2c;
+    font-size: large;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+h1 {
+    margin: 2rem 0;
+}
+
+img {
+    border-radius: 0.25rem;
+}
+
+a {
+    font-weight: bold;
+    color: rgba(255, 122, 0, 1);
+    text-decoration: none;
+}
+
+a > img {
+    border: 3px solid rgba(0, 0, 0, 0)
+}
+
+a:hover > img {
+    border-radius: 0.25rem;
+    border: 3px solid rgba(255, 122, 0, 1);
+    transition: all 0.1s ease-in;
+}
+
+nav {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #2c2c2c;
+    color: #ffffff;
+    padding: 0.8rem 2rem;
+}
+
+@media screen and (max-width:720px) {
+    nav {
+        padding: 0.8rem 1rem;
+    }
+}
+
+nav a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: all 0.1s ease-in;
+}
+
+nav a:hover {
+    color: rgba(255, 122, 0, 1);
+    text-decoration: none;
+}
+
+button {
+    font-family: "PT Sans Caption", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #2c2c2c;
+    background-color: rgba(255, 122, 0, 1);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.3rem;
+    border: 1px solid rgba(255, 122, 0, 1);
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+}
+
+button:hover {
+    background-color: rgba(255, 122, 0, 0);
+    color: rgba(255, 122, 0, 1);
+}
+
+li {
+    line-height: 1.8rem;
+}
+
+main {
+    background-color: #ffffff;
+    padding-bottom: 4rem;
+}
+
+section {
+    margin: 0;
+    padding: 2rem 4rem;
+    text-wrap: wrap;
+}
+
+@media screen and (max-width:720px) {
+    section {
+        padding: 2rem 1rem;
+    }
+}
+
+footer {
+    color: #ffffff;
+}
+
+#logo {
+    width: 35%;
+    min-width: 300px;
+}
+
+#hero {
+    width: 100%;
+    margin: 2.5rem 0 0;
+    padding: 0;
+    background-color: #2c2c2c;
+    overflow: hidden;
+    position: relative;
+}
+
+#hero video {
+    user-select: none;
+    pointer-events: none;
+
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+
+    height: 100%;
+    width: 177.77777778vh; /* 100 * 16 / 9 */
+    min-width: 100%;
+    /* min-height: 56.25vw; */ /* 100 * 9 / 16 */
+}
+
+#hero section {
+    position: relative;
+    z-index: 1;
+
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#hero a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: all 0.1s ease-in;
+}
+
+#hero a:hover {
+    color: rgba(255, 122, 0, 0.8);
+    text-decoration: none;
+}
+
+#gallery #images {
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+@media screen and (max-width:720px) {
+    #gallery #images {
+        column-gap: 1rem;
+        row-gap: 1rem;
+    }
+}
+
+.img.inline {
+    height: 1.8rem;
+    margin: 0 0.8rem 0 0;
+}
+
+.img.main {
+    max-width: 30vw;
+    margin-top: 2rem;
+    z-index: 2;
+}
+
+.img.thumb {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;  
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.row.vcenter {
+    align-items: center;
+}
+
+.row.hcenter {
+    justify-content: center;
+}
+
+.row.gap {
+    column-gap: 4rem;
+}
+
+@media screen and (max-width:720px) {
+    .row.gap {
+        column-gap: 1rem;
+    }
+}
+
+.row.space-between {
+    justify-content: space-between;
+}
+
+.mt {
+   margin-top: 2rem; 
+}
+
+.mb {
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 720px) {
+    .no-mobile {
+        display: none;
+    }
+}
+
+.primary {
+    color: rgba(255, 122, 0, 1);
+}
+
+.bg-dark {
+    background-color: #2c2c2c;
+    color: #ffffff;
+}
+
+.bg-light {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #2c2c2c;
+}
+
+.inset {
+    padding: 1rem 2rem;
+    border-radius: 0.25rem;
+}
+
+@media screen and (max-width: 720px) {
+    .inset {
+        margin-right: 0;
+        padding: 0;
+    }
+    
+    .inset.bg-dark {
+        background-color:  unset;
+        color: #2c2c2c;
+    }
+}
+
+.overflow {
+    z-index: 1;
+    margin-right: -5rem;
+}
+
+@media screen and (max-width: 720px) {
+    .overflow {
+        margin-right: 0;
+    }
+}
