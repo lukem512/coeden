@@ -1,6 +1,10 @@
 # coeden
 Coeden tree care website.
 
+## Images
+
+Thumbnails are 500px wide and encoded at 80% quality using GIMP.
+
 ## Video encoding
 
 Crop the video to length:
