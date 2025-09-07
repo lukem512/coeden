@@ -251,13 +251,17 @@ svg.icon {
     }
 }
 
+.wrap {
+    flex-wrap: wrap;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
 .row {
     display: flex;
     flex-direction: row;
-}
-
-.wrap {
-    flex-wrap: wrap;
 }
 
 .row.vcenter {
@@ -298,8 +302,12 @@ svg.icon {
     justify-content: space-between;
 }
 
+.w-100 {
+    width: 100%;
+}
+
 .mt {
-   margin-top: 2rem; 
+    margin-top: 2rem; 
 }
 
 .mb {
