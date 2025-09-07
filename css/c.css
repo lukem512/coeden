@@ -319,6 +319,18 @@ svg.icon {
     margin-bottom: 1rem;
 }
 
+.highlight {
+    padding-left: 1rem;
+    border-left: 3px solid rgba(255, 122, 0, 1);
+    line-height: 2rem;
+}
+
+@media screen and (max-width: 720px) {
+    .highlight {
+        padding: 1rem;
+    }
+}
+
 @media screen and (max-width: 720px) {
     .no-mobile {
         display: none;
