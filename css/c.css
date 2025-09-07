@@ -44,6 +44,10 @@ a:hover > img {
     transition: all 0.1s ease-in;
 }
 
+a.plain {
+    font-weight: normal;
+}
+
 nav {
     z-index: 999;
     position: fixed;
@@ -75,7 +79,11 @@ nav a:hover {
     text-decoration: none;
 }
 
-button {
+nav button, nav .btn {
+    padding: 0.25rem 0.5rem;
+}
+
+button, .btn {
     font-family: "PT Sans Caption", Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -83,14 +91,14 @@ button {
     letter-spacing: 0.1rem;
     color: #2c2c2c;
     background-color: rgba(255, 122, 0, 1);
-    padding: 0.25rem 0.5rem;
+    padding: 0.5rem 0.8rem;
     border-radius: 0.3rem;
     border: 1px solid rgba(255, 122, 0, 1);
     cursor: pointer;
     transition: all 0.1s ease-in;
 }
 
-button:hover {
+button:hover, .btn:hover {
     background-color: rgba(255, 122, 0, 0);
     color: rgba(255, 122, 0, 1);
 }
@@ -147,10 +155,11 @@ footer ul {
     list-style-type: none;
 }
 
-footer svg {
+footer svg,
+svg.icon {
     width: 1.2rem;
-    fill:  rgba(255, 122, 0, 1);
     margin-right: 0.3rem;
+    fill:  rgba(255, 122, 0, 1);
 }
 
 #logo {
@@ -263,6 +272,10 @@ footer svg {
     column-gap: 4rem;
 }
 
+.row.gap-small {
+    column-gap: 1rem;
+}
+
 @media screen and (max-width:720px) {
     .row.gap {
         column-gap: 1rem;
@@ -274,7 +287,7 @@ footer svg {
     }
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 721px) {
     .row.desktop {
         display: flex;
         flex-direction: row;
@@ -291,10 +304,20 @@ footer svg {
 
 .mb {
     margin-bottom: 2rem;
+}   
+
+.mb-small {
+    margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 720px) {
     .no-mobile {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 721px) {
+    .no-desktop {
         display: none;
     }
 }
@@ -327,6 +350,17 @@ footer svg {
     .inset.bg-dark {
         background-color:  unset;
         color: #2c2c2c;
+    }
+
+    .inset.bg-dark svg.icon {
+        fill: #2c2c2c;
+    }
+
+    .inset.bg-dark button:hover,
+    .inset.bg-dark .btn:hover {
+        background-color: #ffffff;
+        color: #2c2c2c;
+        border-color: #2c2c2c;
     }
 }
 
