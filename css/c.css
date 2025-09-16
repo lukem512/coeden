@@ -228,6 +228,17 @@ svg.icon {
     }
 }
 
+span.business-name-left {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+span.business-name-right {
+    text-transform: uppercase;
+    font-weight: normal;
+    padding-left: 0.2rem;
+}
+
 .img.inline {
     height: 1.8rem;
     margin: 0 0.8rem 0 0;
