@@ -200,8 +200,8 @@ svg.icon {
     position: relative;
     z-index: 1;
 
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     color: rgba(255, 255, 255, 0.8);
 }
 
@@ -228,9 +228,21 @@ svg.icon {
     }
 }
 
+h1.business-name {
+    font-size: 5rem;
+    margin: 0 0 1rem 0;
+}
+
+h2.business-slogan {
+    margin: 1rem 0;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
 span.business-name-left {
     text-transform: uppercase;
     font-weight: bold;
+    letter-spacing: 0.1rem;;
 }
 
 span.business-name-right {
